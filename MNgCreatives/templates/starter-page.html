@@ -41,10 +41,9 @@
         <ul>
           <li><a href="{% url 'index' %}"><i class="bi bi-house navicon"></i>Home</a></li>
           <li><a href="{% url 'about' %}"><i class="bi bi-person navicon"></i> About</a></li>
-          <li><a href="{% url 'resume' %}"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-          <li><a href="{% url 'portfolio_details' %}"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="{% url 'portfolio' %}"><i class="bi bi-images navicon"></i> Portfolio</a></li>
           <li><a href="{% url 'services' %}"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-          <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -60,8 +59,9 @@
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
-          <li><a href="{% static '#contact' %}"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+          </li> -->
+          <li><a href="{% url 'contact' %}"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+          <li><a href="{% url 'testimonials' %}"><i class="bi bi-chat-left-quote navicon"></i> Testimonials</a></li>
         </ul>
       </nav>
 
