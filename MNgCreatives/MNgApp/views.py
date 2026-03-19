@@ -13,3 +13,9 @@ def starter_page(request):
 
 def services(request):
     return render(request, 'service-details.html')
+
+def about(request):
+    return render(request, 'about.html')
+
+def resume(request):
+    return render(request, 'resume.html')
