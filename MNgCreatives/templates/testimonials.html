@@ -6,65 +6,132 @@
 <main class="main">
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
+     <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Hear from our happy clients</p>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
 
-        <div class="testimonials-slider swiper">
-          <div class="swiper-wrapper">
+        <div class="testimonial-masonry">
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'assets/img/testimonials/testimonial-1.jpg' %}" class="testimonial-img" alt="">
-                <h3>John Doe</h3>
-                <h4>CEO & Founder</h4>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  Proin iaculis at erat in malesuada. Nullam id ligula nec enim lacinia ultrices.
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
+          <div class="testimonial-item" data-aos="fade-up">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
               </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'assets/img/testimonials/testimonial-2.jpg' %}" class="testimonial-img" alt="">
-                <h3>Jane Smith</h3>
-                <h4>Designer</h4>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  Quisquam autem voluptas doloremque et quia. Eos et autem doloremque et quia.
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
+              <p>Working with the photographers was an amazing experience. Every moment was captured so beautifully and naturally. The final photos exceeded my expectations and truly told my story. Highly recommended!.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="{% static 'assets/img/person/person-f-7.webp' %}" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>Emmanuel Mwanik</h3>
+                  <span class="position">A friend of Undercore Mng Creatives </span>
+                </div>
               </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'assets/img/testimonials/testimonial-3.jpg' %}" class="testimonial-img" alt="">
-                <h3>Michael Johnson</h3>
-                <h4>Developer</h4>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  Repellendus qui recusandae. Quisquam autem voluptas doloremque et quia. Eos et autem doloremque et quia.
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
+            </div>
           </div>
-          <div class="swiper-pagination"></div>
+
+          <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>Professional, creative, and very easy to work with. The final images were stunning and delivered right on time.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="{% static 'assets/img/person/person-m-7.webp' %}" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>George Watetu</h3>
+                  <span class="position">The Manager, Ridor</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>"You have a true talent for storytelling through photography. Every picture felt alive and full of emotion."</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="{% static 'assets/img/person/person-f-8.webp' %}" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>Vee Wanjiru</h3>
+                  <span class="position">The CEO, Vee Consultancy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>"The attention to detail was incredible. You captured moments we didn’t even realize were happening."</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="{% static 'assets/img/person/person-m-8.webp' %}" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>Benjamin</h3>
+                  <span class="position">The CEO, Mwewe Enterprises</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="400">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>"I loved how comfortable you made us feel during the shoot. It really shows in the natural and beautiful photos we received."</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="{% static 'assets/img/person/person-f-9.webp' %}" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>Gladys Jepps</h3>
+                  <span class="position">The Bible Study Director, Quiet Time</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>"Absolutely outstanding work! The quality, creativity, and professionalism exceeded all expectations."</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="{% static 'assets/img/person/person-m-13.webp' %}" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>Sandra Waithera</h3>
+                  <span class="position">The Marketing Manager, Blessed Cosmetics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
 
-    </section><!-- End Testimonials Section -->
+    </section><!-- /Testimonials Section -->
 
   </main><!-- End Main -->
 
