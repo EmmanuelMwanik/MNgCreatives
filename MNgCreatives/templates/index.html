@@ -20,22 +20,22 @@
 
             <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
               <div class="hero-text">
-                <h1>Snap<span class="accent-text">Folio</span></h1>
-                <h2>Alexander Chen</h2>
-                <p class="lead">I'm a <span class="typed" data-typed-items="UI/UX Designer, Web Developer, Brand Strategist, Creative Director"></span></p>
-                <p class="description">Passionate about creating exceptional digital experiences that blend innovative design with functional development. Let's bring your vision to life.</p>
+                <div style="font-size: small;"><h1 style="font-size: xx-large;">Underscore<span class="accent-text">MNgCreatives</span></h1></div>
+                <h style="font-size: x-large;">Everything photography</h2>
+                <p class="lead">we <span class="typed" data-typed-items="capture timeless moments and help you create amazing memories"></span></p>
+                <p class="description">Our core aim is to take crisp, crystal clear, vivid images and videos that create and leave nostalgic memories. Every tiny moment matters.</p>
 
                 <div class="hero-actions">
-                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                  <a href="#contact" class="btn btn-outline">Get In Touch</a>
-                </div>
+                  <a href="{% url 'portfolio' %}" class="btn btn-primary">View our Work</a>
+                  <a href="{% url 'contact' %}" class="btn btn-outline">Get In Touch</a>
+              </div>
 
-                <div class="social-links">
+                <!-- <div class="social-links">
                   <a href="#"><i class="bi bi-dribbble"></i></a>
                   <a href="#"><i class="bi bi-behance"></i></a>
                   <a href="#"><i class="bi bi-github"></i></a>
                   <a href="#"><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> -->
               </div>
             </div>
 
@@ -43,7 +43,7 @@
               <div class="hero-visual">
                 <div class="profile-container">
                   <div class="profile-background"></div>
-                  <img src="{% static 'assets/img/profile/profile-square-3.webp' %}" alt="Alexander Chen" class="profile-image">
+                  <img src="{% static  'assets/img/img5.webp'%}" alt="MNgCreatives" class="profile-image" style="border-radius: 10%;">
                 </div>
               </div>
             </div>
@@ -66,9 +66,9 @@
             <div class="stats-wrapper">
               <div class="stats-item" data-aos="zoom-in" data-aos-delay="150">
                 <div class="icon-wrapper">
-                  <i class="bi bi-emoji-smile"></i>
+                  <i class="bi bi-emoji-smile text-warning"></i>
                 </div>
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="70" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Happy Clients</p>
               </div><!-- End Stats Item -->
 
@@ -76,7 +76,7 @@
                 <div class="icon-wrapper">
                   <i class="bi bi-journal-richtext"></i>
                 </div>
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="152" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Projects</p>
               </div><!-- End Stats Item -->
 
@@ -84,7 +84,7 @@
                 <div class="icon-wrapper">
                   <i class="bi bi-headset"></i>
                 </div>
-                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="819" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Hours Of Support</p>
               </div><!-- End Stats Item -->
 
@@ -92,8 +92,8 @@
                 <div class="icon-wrapper">
                   <i class="bi bi-people"></i>
                 </div>
-                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hard Workers</p>
+                <span data-purecounter-start="0" data-purecounter-end="11" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Dedicated Team</p>
               </div><!-- End Stats Item -->
             </div>
           </div>
@@ -109,7 +109,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>At Underscore MNgCreatives, photography is more than just taking pictures — it is about creating stories, preserving emotions, and turning fleeting moments into timeless memories. With a passion for creativity and an eye for detail, we specialize in delivering high-quality visual experiences that speak louder than words..</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -121,10 +121,12 @@
               <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
                 <ul class="portfolio-filters isotope-filters">
                   <li data-filter="*" class="filter-active">All Projects</li>
-                  <li data-filter=".filter-photography">Photography</li>
-                  <li data-filter=".filter-design">Design</li>
-                  <li data-filter=".filter-automotive">Automotive</li>
-                  <li data-filter=".filter-nature">Nature</li>
+                  <li data-filter=".filter-weddings">weddings</li>
+                  <li data-filter=".filter-graduation_parties">Graduation Parties</li>
+                  <li data-filter=".filter-corporate">Corporate Events</li>
+                  <li data-filter=".filter-portrait_fashion">Portrait and fashion</li>
+                  <li data-filter=".filter-real_estate">Real Estate</li>
+                  <li data-filter=".filter-Birthday_Parties">Birthday Parties</li>
                 </ul>
               </div>
             </div>
@@ -132,96 +134,97 @@
             <div class="col-lg-9">
               <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography">
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graduation_parties">
                   <div class="portfolio-wrap">
-                    <img src="{% static 'assets/img/portfolio/portfolio-portrait-1.webp' %}" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <img src="{% static 'assets/img/img7.webp' %}" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Photography</span>
-                        <h4>Capturing Moments</h4>
+                        <span class="category">Graduation Parties</span>
+                        <h4>Turn hard work into unforgettable memories and celebrate your new beginnings.</h4>
                         <div class="portfolio-links">
-                          <a href="{% static 'assets/img/portfolio/portfolio-portrait-1.webp' %}" class="glightbox" title="Capturing Moments"><i class="bi bi-plus-lg"></i></a>
-                          <a href="{% static 'portfolio-details.html' %}" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                          <a href="{% static 'assets/img/img8.webp' %}" class="glightbox" title="Capturing Moments"><i class="bi bi-plus-lg"></i></a>
+                          
                         </div>
                       </div>
                     </div>
                   </div>
-                </div><!-- End Portfolio Item -->
+                </div><!-- End Portfolio Item(Graduation Parties) -->
 
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
+                
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-weddings">
                   <div class="portfolio-wrap">
-                    <img src="{% static 'assets/img/portfolio/portfolio-2.webp' %}" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <img src="{% static 'assets/img/img6Commercial.webp' %}" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Web Design</span>
-                        <h4>Woodcraft Design</h4>
+                        <span class="category">weddings</span>
+                        <h4>The beauty of your love story through elegant and timeless imagery.</h4>
                         <div class="portfolio-links">
-                          <a href="{% static 'assets/img/portfolio/portfolio-2.webp' %}" class="glightbox" title="Woodcraft Design"><i class="bi bi-plus-lg"></i></a>
-                          <a href="{% static 'portfolio-details.html' %}" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                          <a href="{% static 'assets/img/img8.webp' %}" class="glightbox" title="Capturing Moments"><i class="bi bi-plus-lg"></i></a>
+                          
                         </div>
                       </div>
                     </div>
                   </div>
-                </div><!-- End Portfolio Item -->
+                </div><!-- End Portfolio Item(weddings) -->
 
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-automotive">
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-corporate">
                   <div class="portfolio-wrap">
-                    <img src="{% static 'assets/img/portfolio/portfolio-portrait-2.webp' %}" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <img src="{% static 'assets/img/img16.webp' %}" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Automotive</span>
+                        <span class="category">Corporate Events</span>
                         <h4>Classic Beauty</h4>
                         <div class="portfolio-links">
                           <a href="{% static 'assets/img/portfolio/portfolio-portrait-2.webp' %}" class="glightbox" title="Classic Beauty"><i class="bi bi-plus-lg"></i></a>
-                          <a href="{% static 'portfolio-details.html' %}" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                          
                         </div>
                       </div>
                     </div>
                   </div>
-                </div><!-- End Portfolio Item -->
+                </div><!-- End Portfolio Item(Corporate Events) -->
 
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-nature">
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-">portrait_fashion
                   <div class="portfolio-wrap">
                     <img src="{% static 'assets/img/portfolio/portfolio-portrait-4.webp' %}" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Nature</span>
+                        <span class="category">Portrait and fashion</span>
                         <h4>Natural Growth</h4>
                         <div class="portfolio-links">
-                          <a href="{% static 'assets/img/portfolio/portfolio-portrait-4.webp' %}" class="glightbox" title="Natural Growth"><i class="bi bi-plus-lg"></i></a>
-                          <a href="{% static 'portfolio-details.html' %}" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                          <a href="{% static 'assets/img/img12portrait.webp' %}" class="glightbox" title="Natural Growth"><i class="bi bi-plus-lg"></i></a>
+                          
                         </div>
                       </div>
                     </div>
                   </div>
-                </div><!-- End Portfolio Item -->
+                </div><!-- End Portfolio Item(Portrait and fashion) -->
 
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography">
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-real_estate">
                   <div class="portfolio-wrap">
                     <img src="{% static 'assets/img/portfolio/portfolio-5.webp' %}" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Photography</span>
+                        <span class="category">Real Estate</span>
                         <h4>Urban Stories</h4>
                         <div class="portfolio-links">
-                          <a href="{% static 'assets/img/portfolio/portfolio-5.webp' %}" class="glightbox" title="Urban Stories"><i class="bi bi-plus-lg"></i></a>
-                          <a href="{% static 'portfolio-details.html' %}" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                          <a href="{% static 'assets/img/img16.webp' %}" class="glightbox" title="Urban Stories"><i class="bi bi-plus-lg"></i></a>
+                        
                         </div>
                       </div>
                     </div>
                   </div>
                 </div><!-- End Portfolio Item -->
 
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-Birthday_Parties">
                   <div class="portfolio-wrap">
-                    <img src="{% static 'assets/img/portfolio/portfolio-6.webp' %}" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <img src="{% static 'assets/img/img1Portrait.webp' %}" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Web Design</span>
-                        <h4>Digital Experience</h4>
+                        <span class="category">Birthday Parties</span>
+                        <h4>We capture the Experience with friends and family, celebrating the far you have come</h4>
                         <div class="portfolio-links">
                           <a href="{% static 'assets/img/portfolio/portfolio-6.webp' %}" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
-                          <a href="{% static 'portfolio-details.html' %}" title="More Details"><i class="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>
@@ -246,7 +249,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Hear from our happy clients</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -258,14 +261,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Implementing innovative strategies has revolutionized our approach to market challenges and competitive positioning.</p>
+              <p>Working with the photographers was an amazing experience. Every moment was captured so beautifully and naturally. The final photos exceeded my expectations and truly told my story. Highly recommended!.</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="{% static 'assets/img/person/person-f-7.webp' %}" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Rachel Bennett</h3>
-                  <span class="position">Strategy Director</span>
+                  <h3>Emmanuel Mwanik</h3>
+                  <span class="position">A friend of Undercore Mng Creatives </span>
                 </div>
               </div>
             </div>
@@ -276,14 +279,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Exceptional service delivery and innovative solutions have transformed our business operations, leading to remarkable growth and enhanced customer satisfaction across all touchpoints.</p>
+              <p>Professional, creative, and very easy to work with. The final images were stunning and delivered right on time.</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="{% static 'assets/img/person/person-m-7.webp' %}" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Daniel Morgan</h3>
-                  <span class="position">Chief Innovation Officer</span>
+                  <h3>George Watetu</h3>
+                  <span class="position">The Manager, Ridor</span>
                 </div>
               </div>
             </div>
@@ -294,14 +297,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Strategic partnership has enabled seamless digital transformation and operational excellence.</p>
+              <p>"You have a true talent for storytelling through photography. Every picture felt alive and full of emotion."</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="{% static 'assets/img/person/person-f-8.webp' %}" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Emma Thompson</h3>
-                  <span class="position">Digital Lead</span>
+                  <h3>Vee Wanjiru</h3>
+                  <span class="position">The CEO, Vee Consultancy</span>
                 </div>
               </div>
             </div>
@@ -312,14 +315,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Professional expertise and dedication have significantly improved our project delivery timelines and quality metrics.</p>
+              <p>"The attention to detail was incredible. You captured moments we didn’t even realize were happening."</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="{% static 'assets/img/person/person-m-8.webp' %}" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Christopher Lee</h3>
-                  <span class="position">Technical Director</span>
+                  <h3>Benjamin</h3>
+                  <span class="position">The CEO, Mwewe Enterprises</span>
                 </div>
               </div>
             </div>
@@ -330,14 +333,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Collaborative approach and industry expertise have revolutionized our product development cycle, resulting in faster time-to-market and increased customer engagement levels.</p>
+              <p>"I loved how comfortable you made us feel during the shoot. It really shows in the natural and beautiful photos we received."</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="{% static 'assets/img/person/person-f-9.webp' %}" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Olivia Carter</h3>
-                  <span class="position">Product Manager</span>
+                  <h3>Gladys Jepps</h3>
+                  <span class="position">The Bible Study Director, Quiet Time</span>
                 </div>
               </div>
             </div>
@@ -348,14 +351,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Innovative approach to user experience design has significantly enhanced our platform's engagement metrics and customer retention rates.</p>
+              <p>"Absolutely outstanding work! The quality, creativity, and professionalism exceeded all expectations."</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="{% static 'assets/img/person/person-m-13.webp' %}" alt="Client">
                 </div>
                 <div class="client-details">
-                  <h3>Nathan Brooks</h3>
-                  <span class="position">UX Director</span>
+                  <h3>Sandra Waithera</h3>
+                  <span class="position">The Marketing Manager, Blessed Cosmetics</span>
                 </div>
               </div>
             </div>
@@ -373,7 +376,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Let's engage...</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -382,7 +385,7 @@
           <div class="col-lg-5">
             <div class="info-box">
               <h3>Contact Info</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
+              <p>We are a throw stone away from you!, talk to us anytime, any day and we shall respond promptly.</p>
 
               <div class="info-item">
                 <div class="icon-box">
@@ -390,8 +393,8 @@
                 </div>
                 <div class="content">
                   <h4>Our Location</h4>
-                  <p>A108 Adam Street</p>
-                  <p>New York, NY 535022</p>
+                  <p>City Park, Crescent 66</p>
+                  <p>Nairobi, Kenya</p>
                 </div>
               </div>
 
@@ -401,8 +404,8 @@
                 </div>
                 <div class="content">
                   <h4>Phone Number</h4>
-                  <p>+1 5589 55488 55</p>
-                  <p>+1 6678 254445 41</p>
+                  <p>+254726 709 449</p>
+                  
                 </div>
               </div>
 
@@ -412,8 +415,8 @@
                 </div>
                 <div class="content">
                   <h4>Email Address</h4>
-                  <p>info@example.com</p>
-                  <p>contact@example.com</p>
+                  <p>Underscorephotos@gmail.com</p>
+                  <p><enquiries class="mngcreatives"></enquiries></p>
                 </div>
               </div>
             </div>
@@ -422,7 +425,7 @@
           <div class="col-lg-7">
             <div class="contact-form">
               <h3>Get In Touch</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
+              <p>Have questions or want to book a session? Fill out the form below and we'll get back to you as soon as possible.</p>
 
               <form action="forms/contact.php" method="post" class="php-email-form">
                 <div class="row gy-4">
@@ -462,7 +465,6 @@
       </div>
 
     </section><!-- /Contact Section -->
-
   </main>
 
 
