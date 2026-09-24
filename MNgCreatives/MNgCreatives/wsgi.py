@@ -1,4 +1,4 @@
-```python
+
 """
 WSGI config for MNgCreatives project.
 
@@ -21,4 +21,3 @@ if PROJECT_DIR not in sys.path:
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'MNgCreatives.settings')
 
 application = get_wsgi_application()
-```
