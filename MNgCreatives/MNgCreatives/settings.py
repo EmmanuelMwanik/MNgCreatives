@@ -17,9 +17,10 @@ SECRET_KEY = 'django-insecure-we4t^1i6jiqfpajgw$^r1=j4m-ls%l7+7_k!y4ne(r79@u3)sf
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "127.0.0.1",
+    "m-ng-creatives.vercel.app",
+    ".vercel.app",
     "localhost",
-    "mngcreatives.onrender.com",
+    "127.0.0.1",
 ]
 
 
