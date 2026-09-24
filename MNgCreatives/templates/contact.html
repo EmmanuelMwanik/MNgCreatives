@@ -62,31 +62,42 @@
               <h3>Get In Touch</h3>
               <p>Have questions or want to book a session? Fill out the form below and we'll get back to you as soon as possible.</p>
 
+              {% if messages %}
+                {% for message in messages %}
+                  <div class="alert {% if message.tags == 'success' %}alert-success{% else %}alert-danger{% endif %}" role="alert">{{ message }}</div>
+                {% endfor %}
+              {% endif %}
+
               <form action="{% url 'contact' %}" method="post" class="php-email-form">
                 {% csrf_token %}
+                {% if form.errors %}
+                  <div class="alert alert-danger" role="alert">Please check the form fields and try again.</div>
+                {% endif %}
                 <div class="row gy-4">
 
                   <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    {{ form.name }}
+                    {{ form.name.errors }}
                   </div>
 
                   <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    {{ form.email }}
+                    {{ form.email.errors }}
                   </div>
 
                   <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    {{ form.subject }}
+                    {{ form.subject.errors }}
                   </div>
 
                   <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    {{ form.message }}
+                    {{ form.message.errors }}
                   </div>
 
                   <div class="col-12 text-center">
                     <div class="loading">Loading</div>
                     <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-
                     <button type="submit" class="btn">Send Message</button>
                   </div>
 
