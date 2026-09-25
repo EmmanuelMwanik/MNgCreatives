@@ -18,11 +18,13 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     "m-ng-creatives.vercel.app",
+    "m-ng-creatives-4gso.vercel.app",
     ".vercel.app",
+    "underscoremngcreatives.co.ke",
+    "www.underscoremngcreatives.co.ke",
     "localhost",
     "127.0.0.1",
 ]
-
 
 # Application definition
 
