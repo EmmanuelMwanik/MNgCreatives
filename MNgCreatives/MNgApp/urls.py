@@ -1,5 +1,16 @@
-from django.urls import path, include
+from django.urls import path
+from django.contrib.sitemaps.views import sitemap
 from . import views
+from .sitemaps import StaticViewSitemap
+
+sitemaps = {
+    'static': StaticViewSitemap,
+}
+
+urlpatterns = [
+    ...
+]
+
 
 urlpatterns = [
     path('', views.index, name = 'index'),
@@ -10,4 +21,10 @@ urlpatterns = [
     path('resume/', views.resume, name = 'resume'),
     path('contact/', views.contact, name = 'contact'),
     path('testimonials/', views.testimonials, name = 'testimonials'),
+    path(
+    'sitemap.xml',
+    sitemap,
+    {'sitemaps': sitemaps},
+    name='django.contrib.sitemaps.views.sitemap',
+),
 ]
