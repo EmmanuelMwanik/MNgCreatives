@@ -1,22 +1,21 @@
-# sitemaps.py
-
-from django.contrib.sitemaps import Sitemap
+from django.contrib import sitemaps
 from django.urls import reverse
 
 
-class StaticViewSitemap(Sitemap):
-    changefreq = "monthly"
-    priority = 0.8
+class StaticViewSitemap(sitemaps.Sitemap):
+    priority = 0.5
+    changefreq = "weekly"
 
     def items(self):
         return [
-            "index",
-            "portfolio",
-            "services",
-            "about",
-            "resume",
-            "contact",
-            "testimonials",
+            'index',
+            'portfolio',
+            'starter',
+            'services',
+            'about',
+            'resume',
+            'contact',
+            'testimonials',
         ]
 
     def location(self, item):
