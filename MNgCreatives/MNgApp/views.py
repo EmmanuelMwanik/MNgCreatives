@@ -1,7 +1,9 @@
 from django.contrib import messages
 from django.shortcuts import redirect, render
+from django.contrib.sitemaps.views import sitemap
 
 from .forms import ContactForm
+from .sitemaps import StaticViewSitemap
 
 
 
@@ -38,3 +40,8 @@ def contact(request):
 
 def testimonials(request):
     return render(request, 'testimonials.html')
+
+def sitemap_view(request):
+    response = sitemap(request, {'static': StaticViewSitemap})
+    response.headers.pop('X-Robots-Tag', None)
+    return response

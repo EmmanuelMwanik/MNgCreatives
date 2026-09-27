@@ -28,9 +28,8 @@ urlpatterns = [
     path('testimonials/', views.testimonials, name='testimonials'),
 
     path(
-        'sitemap.xml',
-        sitemap,
-        {'sitemaps': sitemaps},
-        name='sitemap',
+    'sitemap.xml',
+    views.sitemap_view,
+    name='sitemap',
     ),
 ]
