@@ -10,7 +10,6 @@ class StaticViewSitemap(sitemaps.Sitemap):
         return [
             'index',
             'portfolio',
-            'starter',
             'services',
             'about',
             'resume',

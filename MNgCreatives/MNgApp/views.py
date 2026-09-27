@@ -14,7 +14,7 @@ def portfolio_details(request):
     return render(request, 'portfolio-details.html')
 
 def starter_page(request):
-    return render(request, 'starter-page.html')
+    return redirect('index')
 
 def services(request):
     return render(request, 'service-details.html')
