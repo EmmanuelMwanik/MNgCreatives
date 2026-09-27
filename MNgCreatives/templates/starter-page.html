@@ -5,14 +5,14 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
   <title>Starter Page - SnapFolio Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-  <!-- Favicons -->
-  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
-  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
-
+  <!-- Website Favicon -->
+<link rel="icon" href="{% static 'assets/img/companylogo.webp' %}" type="image/webp">
+<link rel="shortcut icon" href="{% static 'assets/img/companylogo.webp' %}" type="image/webp">
   <!-- Fonts -->
   <link href="{% static 'assets/fonts/roboto.css' %}" rel="preconnect">
   <link href="{% static 'assets/fonts/ubuntu.css' %}" rel="preconnect" crossorigin>
@@ -28,7 +28,6 @@
   <!-- Main CSS File -->
   <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
 
- 
 </head>
 
 <body class="starter-page-page">
@@ -37,40 +36,71 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="header-container d-flex flex-column align-items-start">
+
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="{% url 'index' %}"><i class="bi bi-house navicon text-primary"></i>Home</a></li>
-          <li><a href="{% url 'about' %}"><i class="bi bi-person navicon text-warning"></i> About</a></li>
-          <li><a href="{% url 'portfolio' %}"><i class="bi bi-images navicon text-info"></i> Portfolio</a></li>
-          <li><a href="{% url 'services' %}"><i class="bi bi-hdd-stack navicon text-primary"></i> Services</a></li>
-          <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
-          <li><a href="{% url 'contact' %}"><i class="bi bi-envelope navicon text-warning"></i> Contact</a></li>
-          <li><a href="{% url 'testimonials' %}"><i class="bi bi-chat-left-quote navicon text-info"></i> Testimonials</a></li>
+
+          <li>
+            <a href="{% url 'index' %}">
+              <i class="bi bi-house navicon text-primary"></i>Home
+            </a>
+          </li>
+
+          <li>
+            <a href="{% url 'about' %}">
+              <i class="bi bi-person navicon text-warning"></i> About
+            </a>
+          </li>
+
+          <li>
+            <a href="{% url 'portfolio' %}">
+              <i class="bi bi-images navicon text-info"></i> Portfolio
+            </a>
+          </li>
+
+          <li>
+            <a href="{% url 'services' %}">
+              <i class="bi bi-hdd-stack navicon text-primary"></i> Services
+            </a>
+          </li>
+
+          <li>
+            <a href="{% url 'contact' %}">
+              <i class="bi bi-envelope navicon text-warning"></i> Contact
+            </a>
+          </li>
+
+          <li>
+            <a href="{% url 'testimonials' %}">
+              <i class="bi bi-chat-left-quote navicon text-info"></i> Testimonials
+            </a>
+          </li>
+
         </ul>
       </nav>
 
       <div class="social-links text-center">
-        <a href="https://twitter.com/mng_underscore" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://www.facebook.com/mng_underscore" class="facebook text-primary"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.facebook.com/manasses.nganga.9" class="instagram text-danger" target="_blank"><i class="bi bi-instagram"></i></a>
-        <a href="https://wa.me/+254726709449" class="whatsapp text-success" target="_blank"><i class="bi bi-whatsapp"></i></a>
-        <a href="https://www.linkedin.com/underscoremng" class="linkedin text-info" target="_blank"><i class="bi bi-linkedin"></i></a>
+
+        <a href="https://twitter.com/mng_underscore" class="twitter">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+
+        <a href="https://www.facebook.com/mng_underscore" class="facebook text-primary">
+          <i class="bi bi-facebook"></i>
+        </a>
+
+        <a href="https://www.facebook.com/manasses.nganga.9" class="instagram text-danger" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="https://wa.me/+254726709449" class="whatsapp text-success" target="_blank">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/underscoremng" class="linkedin text-info" target="_blank">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
       </div>
 
     </div>
@@ -83,25 +113,41 @@
 
     {% endblock %}
 
-    
   </main>
 
   <footer id="footer" class="footer position-relative">
 
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">MNgUnderscore</strong> <span>All Rights Reserved</span></p>
+
+      <div class="copyright text-center">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">MNgUnderscore</strong>
+          <span>All Rights Reserved</span>
+        </p>
       </div>
-      <!-- <div class="credits">
-        
-        Designed by <a href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
-      </div> -->
+
+      <!--
+      <div class="credits">
+        Designed by
+        <a href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+          BootstrapMade
+        </a>
+        |
+        <a href="https://bootstrapmade.com/tools/">
+          DevTools
+        </a>
+      </div>
+      -->
+
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
