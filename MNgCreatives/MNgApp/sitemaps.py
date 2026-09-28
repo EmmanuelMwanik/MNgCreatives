@@ -12,7 +12,6 @@ class StaticViewSitemap(sitemaps.Sitemap):
             'portfolio',
             'services',
             'about',
-            'resume',
             'contact',
             'testimonials',
         ]

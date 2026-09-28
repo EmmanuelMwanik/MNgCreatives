@@ -22,9 +22,6 @@ def services(request):
 def about(request):
     return render(request, 'about.html')
 
-def resume(request):
-    return render(request, 'resume.html')
-
 def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
