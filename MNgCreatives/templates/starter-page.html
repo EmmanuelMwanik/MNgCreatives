@@ -3,17 +3,22 @@
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>{% block title %}Underscore MNgCreatives | Photography & Videography in Kenya{% endblock %}</title>
 
   <meta name="description" content="Underscore MNgCreatives is a photography and videography creative studio in Kenya, capturing weddings, graduations, portraits, birthdays, corporate events, and real estate moments.">
 
   <meta name="keywords" content="photography Kenya, videography Kenya, wedding photography, graduation photography, portrait photography, event photography, real estate photography, MNgCreatives">
 
-  <link rel="canonical" href="https://www.underscoremngcreatives.co.ke/">
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.underscoremngcreatives.co.ke{{ request.path }}">
 
   <!-- Website Favicon -->
-<link rel="icon" href="{% static 'assets/img/companylogo.webp' %}" type="image/webp">
-<link rel="shortcut icon" href="{% static 'assets/img/companylogo.webp' %}" type="image/webp">
+  <link rel="icon" href="{% static 'assets/img/companylogo.webp' %}" type="image/webp">
+  <link rel="shortcut icon" href="{% static 'assets/img/companylogo.webp' %}" type="image/webp">
+
   <!-- Fonts -->
   <link href="{% static 'assets/fonts/roboto.css' %}" rel="preconnect">
   <link href="{% static 'assets/fonts/ubuntu.css' %}" rel="preconnect" crossorigin>
@@ -123,7 +128,7 @@
       <div class="copyright text-center">
         <p>
           © <span>Copyright</span>
-          <strong class="px-1 sitename">MNgUnderscore</strong>
+          <strong class="px-1 sitename">Underscore MNgCreatives</strong>
           <span>All Rights Reserved</span>
         </p>
       </div>
